@@ -12,9 +12,9 @@ public class WhenCreatingObjects {
         fido.feed();
         System.out.println(fido.getName());
         System.out.println("Fido goes " + makeNoise());
-        Assert.assertEquals(fido.getName(), "Fido");
-        Assert.assertEquals(fido.getFavoriteToy(), "Bone");
-        Assert.assertEquals(fido.getAge(), 5);
+        Assert.assertEquals("Fido",fido.getName());
+        Assert.assertEquals("Bone",fido.getFavoriteToy());
+        Assert.assertEquals(5,fido.getAge());
     }
     @Test
     public void creating_a_hamster() {
@@ -22,9 +22,9 @@ public class WhenCreatingObjects {
 
         System.out.println(chip.getName());
 
-        Assert.assertEquals(chip.getName(),"Chip");
-        Assert.assertEquals(chip.getFavoriteGame(), "Checkers");
-        Assert.assertEquals(chip.getAge(), 2);
+        Assert.assertEquals("Chip",chip.getName());
+        Assert.assertEquals("Checkers",chip.getFavoriteGame());
+        Assert.assertEquals(2,chip.getAge());
         }
 
     @Test
@@ -33,9 +33,9 @@ public class WhenCreatingObjects {
 
         System.out.println(garfield.getName());
 
-        Assert.assertEquals(garfield.getName(), "Garfield");
-        Assert.assertEquals(garfield.getFavroriteFood(),"lasagna");
-        Assert.assertEquals(garfield.getAge(),44);
+        Assert.assertEquals("Garfield",garfield.getName());
+        Assert.assertEquals("lasagna",garfield.getFavoriteFood());
+        Assert.assertEquals(44,garfield.getAge());
     }
 
     }

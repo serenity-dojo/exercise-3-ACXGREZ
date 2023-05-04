@@ -1,30 +1,21 @@
 package com.serenitydojo;
 
 public class Cat extends Pet {
-//    private String name;
-    private String favroriteFood;
+    private String favoriteFood;
     private int age;
 
-    public Cat(String name,String favroriteFood,int age) {
+    public Cat(String name, String favoriteFood, int age) {
         super(name);
-//        this.name = name;
-        this.favroriteFood = favroriteFood;
+        this.favoriteFood = favoriteFood;
         this.age = age;
     }
-//    public String getName() {
-//        return name;
-//    }
 
-//    public void setName(String name) {
-//        this.name = name;
-//    }
-
-    public String getFavroriteFood() {
-        return favroriteFood;
+    public String getFavoriteFood() {
+        return favoriteFood;
     }
 
-    public void setFavroriteFood(String favroriteFood) {
-        this.favroriteFood = favroriteFood;
+    public void setFavoriteFood(String favoriteFood) {
+        this.favoriteFood = favoriteFood;
     }
 
     public int getAge() {
