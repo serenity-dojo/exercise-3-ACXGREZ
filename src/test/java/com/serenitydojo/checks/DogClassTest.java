@@ -1,10 +1,14 @@
 package com.serenitydojo.checks;
 
+import com.serenitydojo.Dog;
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+
 public class DogClassTest {
+
     @Test
     public void theDogClassShouldExist() throws ClassNotFoundException {
         assertThat(Class.forName("com.serenitydojo.Dog")).isNotNull();
