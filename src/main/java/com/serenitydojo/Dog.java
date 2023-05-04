@@ -1,12 +1,14 @@
 package com.serenitydojo;
 
-public class Dog extends Pet {
+public class Dog {
+
+    private String name;
     private String favoriteToy;
     private int age;
     private boolean isFed;
 
 public Dog(String name, String favoriteToy, int age) {
-    super(name);
+    this.name = name;
     this.favoriteToy = favoriteToy;
     this.age = age;
 }
@@ -20,6 +22,7 @@ public void feed() {
     isFed = true;
 }
 
+public String getName() { return name;}
 public String getFavoriteToy() {
     return favoriteToy;
 }
